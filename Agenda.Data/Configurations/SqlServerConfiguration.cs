@@ -15,6 +15,6 @@ namespace Agenda.Data.Configurations
         /// Método para retornar a ConnectionString do Banco de Dados.
         /// </summary>
         public static string GetConnectionString
-            => @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BDAgenda;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            => @"";
     }
 }
