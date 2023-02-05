@@ -3,11 +3,12 @@
 ## Projeto desenvolvido em C# com AspNet MVC e utilizando
 1. C#
 2. AspNet MVC
-3. NuGet
-4. Bootstrap CSS
-5. JQuery + Plugins (DataTable, MaskedInput etc)
-6. SQLServer
-7. iText (Relatórios PDF)
+3. Razor
+4. NuGet
+5. Bootstrap CSS
+6. JQuery + Plugins (DataTable, MaskedInput etc)
+7. SQLServer
+8. iText (Relatórios PDF)
 ## Link de live demo do projeto:
 link: (Link fora do ar, originalmente publicado no host MyAspNet, porém conta free expirou).
 ## Quickstart:
