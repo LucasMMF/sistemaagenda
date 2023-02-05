@@ -1,0 +1,37 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Agenda COTI Informática</title>
+
+    <!-- importando o CSS do bootstrap -->
+    <link rel="stylesheet" href="~/css/bootstrap.css" type="text/css"/>
+
+</head>
+<body class="bg-secondary">
+
+
+    <div class="row mt-5">
+        <div class="col-md-4 offset-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <!-- local para exibir o conteudo das páginas que herdarem este layout -->
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+        <div class="mt-2 text-center text-white">
+            <small>Agenda - COTI Informática v1.0</small>
+        </div>
+    </div>
+    
+    <!-- importando os arquivos JS -->
+    <script type="text/javascript" src="~/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>

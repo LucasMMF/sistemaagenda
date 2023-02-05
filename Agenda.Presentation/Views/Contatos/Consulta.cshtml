@@ -1,0 +1,87 @@
+﻿@** Define a classe de modelo de dados *@
+@model List<Agenda.Presentation.Models.ContatosConsultaModel>
+
+@{
+    ViewData["Title"] = "Consulta";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<div class="card">
+
+    <div class="card-body">
+
+        <h4>Consulta de Contatos</h4>
+        <p>Listagem de contatos cadastrados em sua agenda.</p>
+        <hr/>
+
+        <div class="table-responsive">
+            <table id="consulta" class="table table-sm table-hover">
+                <thead>
+                    <tr>
+                        <th>Nome do contato</th>
+                        <th>Telefone</th>
+                        <th>Email</th>
+                        <th>Data de Nascimento</th>
+                        <th>Tipo</th>
+                        <th>Operações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach(var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Nome</td>
+                            <td>@item.Telefone</td>
+                            <td>@item.Email</td>
+                            <td>@item.DataNascimento</td>
+                            <td>@item.Tipo</td>
+                            <td>
+                                <a href="/Contatos/Edicao/@item.IdContato" class="btn btn-sm btn-primary">
+                                    Editar
+                                </a>
+                                <a href="/Contatos/Exclusao/@item.IdContato" class="btn btn-sm btn-danger"
+                                    onclick="return confirm('Deseja realmente excluir o contato @item.Nome?');">
+                                    Excluir
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">
+                            Quantidade de contatos: @Model.Count
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+    </div>
+
+</div>
+
+@** Preencher a seção 'styles' do AdminLayout *@
+@section styles {
+
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" />
+
+}
+
+@** Preencher a seção 'scripts' do layout *@
+@section scripts {
+
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+
+        <script>
+            $(document).ready( function () {
+                $('#consulta').DataTable( { 
+                    language: {
+                        url: '//cdn.datatables.net/plug-ins/1.12.1/i18n/pt-BR.json'
+                    }
+                } );
+            } );
+        </script>
+
+}
