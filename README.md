@@ -16,11 +16,10 @@ link: (Link fora do ar, originalmente publicado no host MyAspNet, porém conta f
 * Abra o projeto no seu Visual Studio (Recomendado utilizar a versão mais atual do Visual Studio).
 ![alt text](/ImagensReadme/ProjetoNoVisualStudio.png "Projeto aberto no Visual Studio")
 > Siga os passos descritos nas imagens abaixo para criar o banco de dados SQLServer localmente.
-* Clique em Exibir e selecione a opção "SQL Server Object Explorer" para abrir o explorador de objetos do SQL Server.
-<br>
+* Clique em Exibir e selecione a opção "SQL Server Object Explorer" para abrir o explorador de objetos do SQL Server.\
 ![alt text](/ImagensReadme/ExibirSqlServerObject.png "Exiba o explorador de objetos do SQL Server")
 ![alt text](/ImagensReadme/SqlServerObject.png "Exibição do SQL Server Object")
-* Abra o "SQL Server", depois, abra MSSQLLocalDB. Clique com a direita em Databases e selecione "Adicionar novo banco de dados"
+* Abra o "SQL Server", depois, abra MSSQLLocalDB. Clique com a direita em Databases e selecione "Adicionar novo banco de dados"\
 ![alt text](/ImagensReadme/AdicionandoDB.png "Adicionando Banco de Dados")
 * Informe o nome do banco de dados, para este exemplo será usado o nome BDAgendaQS
 ![alt text](/ImagensReadme/CreateDatabase.png "Criando banco de dados")
